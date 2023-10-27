@@ -7,7 +7,7 @@ body {
     background-size:cover;
     width:100vw;
     height:100vh;
-    overflow:hidden;
+    overflow:auto;
     font-family: 'Josefin Sans', sans-serif;
 }
 #loading {
@@ -71,7 +71,7 @@ body {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    position:fixed;
+    position:absolute;
     top:0;
     text-align:center;
     z-index:1;
@@ -146,6 +146,14 @@ body {
     border-bottom:4px solid rgb(255, 44, 90);
     width:6%;
 }
+#portfoliogallery {
+    position: relative; 
+    margin-top: 500px;
+    padding:0px 5vw;
+    text-align:left;
+    z-index:;
+    color:rgb(255, 50, 50);
+        }
 #photos {
     width:100%;
     columns:3;
@@ -160,6 +168,26 @@ body {
     transition:0.4s ease-in-out;
 }
 #photos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#photogallery {
+    position: relative;
+    width:100%;
+    columns:3;
+    column-gap:4%;
+    z-index:1;
+    transition:0.4s ease-in-out;
+}
+
+#photogallery img {
+    width:100%;
+    height:auto;
+    margin:4.5% 0px;
+    transition:0.4s ease-in-out;  
+    top: 10px; 
+}
+#photogallery img:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -315,7 +343,6 @@ body {
     width:92vw;
     padding:5vh 4vw;
     text-align:right;
-    position:fixed;
     z-index:1;
     bottom:0;
     font-size:16px;
